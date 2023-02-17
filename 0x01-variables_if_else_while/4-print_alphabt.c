@@ -1,31 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - program line to check for negative or positive
- * Return: 0 (Success)
+ * main - prints the alphabet in lowercase
+ * followed by a new line, except q and e
+ * Return: Always 0
  */
 int main(void)
 {
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	if (n > 0)
+	char la;
+
+	for (la = 'a'; la <= 'z'; la++)
 	{
-		printf("%d is positive\n", n);
+		if (la != 'e' && la != 'q')
+			putchar(la);
 	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else
-	{
-		printf("%d is zero\n", n);
-	}
+
+	putchar('\n');
+
 	return (0);
 }

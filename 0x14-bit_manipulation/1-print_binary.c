@@ -2,8 +2,6 @@
 /**
  * print_binary - prints binary representation of a number
  * @n: number to print
- *
- * Return: number
  */
 void print_binary(unsigned long int n)
 {
